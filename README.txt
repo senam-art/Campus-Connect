@@ -3,6 +3,7 @@ README - CampusConnect Application
 Introduction:
 
 CampusConnect is a Java-based application designed to enhance university student life by facilitating connections among students for hostel selection, academic decision-making, and evaluating educational staff. This guide provides instructions on how to compile and run the application from the command line.
+Utilizes Javafx
 
 Prerequisites:
 

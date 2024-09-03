@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="692.0" prefWidth="801.0" stylesheets="@css/styling.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.innovations.campusconnect.hfinderresults1controller">
+   <children>
+      <Pane layoutX="125.0" layoutY="178.0" maxHeight="-Infinity" maxWidth="-Infinity">
+         <children>
+            <Button fx:id="submitResults" layoutX="508.0" layoutY="332.0" mnemonicParsing="false" onAction="#submitToFile" onMouseClicked="#saveselection" text="Submit">
+               <styleClass>
+                  <String fx:value="activebutton" />
+                  <String fx:value="pane_1" />
+               </styleClass></Button>
+            <Text fx:id="hostel1" layoutX="64.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="header2" text="Hostel 1">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="price1" layoutX="65.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="header" text="Price1" />
+            <Text fx:id="hostel2" layoutX="65.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="header2" text="Hostel 2">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="price2" layoutX="66.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="header" text="Price2" />
+            <Text fx:id="hostel3" layoutX="64.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="header2" text="Hostel 3">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="price3" layoutX="64.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="header" text="Price3" />
+            <RadioButton fx:id="selection1" layoutX="14.0" layoutY="48.0" mnemonicParsing="false" onAction="#assignFinalHostel1">
+               <toggleGroup>
+                  <ToggleGroup fx:id="finalHostel" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="selection2" layoutX="14.0" layoutY="158.0" mnemonicParsing="false" onAction="#assignFinalHostel2" toggleGroup="$finalHostel" />
+            <RadioButton fx:id="selection3" layoutX="5.0" layoutY="263.0" mnemonicParsing="false" onAction="#assignFinalHostel3" toggleGroup="$finalHostel" />
+            <Label fx:id="facilities1" layoutX="66.0" layoutY="79.0" styleClass="body_text" text="Label" />
+            <Label fx:id="facilities2" layoutX="67.0" layoutY="190.0" styleClass="body_text" text="Label" />
+            <Label fx:id="facilities3" layoutX="65.0" layoutY="287.0" styleClass="body_text" text="Label" />
+         </children>
+      </Pane>
+      <Pane layoutX="-2.0" layoutY="-2.0" prefHeight="79.0" prefWidth="805.0" styleClass="header" stylesheets="@css/styling.css">
+         <children>
+            <Label layoutX="49.0" layoutY="31.0" styleClass="header2" stylesheets="@css/styling.css" text="Hostel Finder" />
+         </children>
+      </Pane>
+      <Label fx:id="oneoption" layoutX="50.0" layoutY="622.0" prefHeight="17.0" prefWidth="320.0" textFill="#d70c0c" />
+      <Text layoutX="91.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="body_text" text="Based on your preferences, here are the  3 top hostels that match your criteria:" textAlignment="CENTER" wrappingWidth="640.0089793726229" />
+      <Text layoutX="94.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="body_text" text="What's your top pick" wrappingWidth="186.95156860351562" />
+   </children>
+</AnchorPane>

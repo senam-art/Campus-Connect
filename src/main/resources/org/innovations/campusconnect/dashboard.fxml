@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="692.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.innovations.campusconnect.dashboardcontroller">
+   <children>
+      <Pane prefHeight="692.0" prefWidth="1056.0">
+         <children>
+            <Pane layoutX="-2.0" layoutY="-3.0" prefHeight="69.0" prefWidth="803.0" stylesheets="@css/styling.css">
+               <children>
+                  <Label layoutX="32.0" layoutY="30.0" styleClass="header" text="Dashboard">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="71.0" fitWidth="114.0" layoutX="691.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/logo%202@3x.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="132.0" fitWidth="132.0" layoutX="222.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/3x/user@3x.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="382.0" layoutY="100.0" prefHeight="132.0" prefWidth="222.0">
+               <children>
+                  <Label fx:id="fullname" layoutX="7.0" layoutY="26.0" styleClass="header2" stylesheets="@css/styling.css" text="Person Full name">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="gradYear" layoutX="7.0" layoutY="90.0" styleClass="header" stylesheets="@css/styling.css" text="Graduation Year">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="majOR" layoutX="7.0" layoutY="116.0" styleClass="header" stylesheets="@css/styling.css" text="Major">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="stuID" layoutX="7.0" layoutY="62.0" styleClass="header" stylesheets="@css/styling.css" text="StudID">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Pane layoutX="52.0" layoutY="339.0" prefHeight="268.0" prefWidth="703.0">
+               <children>
+                  <Text layoutX="22.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Find the perfect accommodation off or  on campus. Search for hostels based on your preferences like location, facilities, and budget." wrappingWidth="673.1052551269531">
+                     <font>
+                        <Font name="Satoshi Medium" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="269.0" layoutY="-40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Get Started with...">
+                     <font>
+                        <Font name="Calibri Light" size="23.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="24.0" layoutY="144.0" styleClass="header" stylesheets="@css/styling.css" text="Hostel Finder:" />
+                  <Label layoutX="21.0" layoutY="36.0" styleClass="header" stylesheets="@css/styling.css" text="Lecturer Review" />
+                  <Text layoutX="22.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Explore and contribute to reviews of lecturers. Share your experiences, rate teaching quality, and provide valuable feedback to help students make informed choices." wrappingWidth="674.5765686035156">
+                     <font>
+                        <Font name="Satoshi Medium" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</HBox>

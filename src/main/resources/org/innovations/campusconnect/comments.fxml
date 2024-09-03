@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="692.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.innovations.campusconnect.viewLecturerComments">
+    <children>
+        <Pane prefHeight="692.0" prefWidth="1235.0">
+         <children>
+            <Label layoutX="44.0" layoutY="17.0" text="View Lecturer Comments">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Text fx:id="viewComments" layoutX="44.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="576.21630859375" />
+         </children>
+        </Pane>
+    </children>
+</HBox>
